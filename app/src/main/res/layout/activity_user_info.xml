@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/primary_p"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UserInfo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/appiconwhitemd"
+        app:civ_border_color="@color/primary_b"
+        app:civ_border_width="1dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/profile_image"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:src="@drawable/appiconwhitemd"-->
+<!--        app:civ_border_color="#FF000000"-->
+<!--        app:civ_border_width="2dp" />-->
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/etbg"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etfirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/etbg"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textCapSentences"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/primary_b"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/etlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/etbg"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/primary_b"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/etbg"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:digits="0123456789"
+            android:maxLength="12"
+            android:inputType="numberSigned"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary_b"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etoccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/etbg"
+            android:ems="10"
+            android:hint="Occupation Title"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary_b"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etdesciption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/etbg"
+            android:ems="10"
+            android:hint="Occupation Description"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary_b"
+            android:textColorHint="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveinfobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:text="Save Information"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
